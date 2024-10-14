@@ -226,6 +226,36 @@ body:not(.editor_enable) #wrapwrap {
       margin-top: calc(var(--pu-section-padding) * .25 * -1);
       margin-bottom: calc(var(--pu-section-padding) * .3); }
 
+.adress_box {
+  --gutter: 20px;
+  padding: var(--gutter);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: calc(var(--pu-box-radius) * .5);
+  position: relative;
+  font-size: .8em;
+  overflow: hidden; }
+  .adress_box-close {
+    position: absolute;
+    right: calc(var(--gutter) * .5);
+    top: calc(var(--gutter) * .4);
+    border: 0;
+    background-color: transparent;
+    border-radius: var(--pu-box-radius);
+    opacity: .3; }
+    .adress_box-close svg {
+      width: 12px; }
+  .adress_box mark {
+    font-weight: bold;
+    margin-bottom: .5em;
+    color: var(--pu-primary);
+    background-color: transparent;
+    display: block;
+    padding: calc(var(--gutter) * .5) var(--gutter);
+    width: calc(100% + var(--gutter) * 2);
+    margin: calc(var(--gutter) * -1);
+    margin-bottom: calc(var(--gutter) * .8);
+    background: rgba(0, 0, 0, 0.03); }
+
 .calculator_tab {
   --gutter: 20px;
   display: flex;
