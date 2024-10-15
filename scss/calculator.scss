@@ -268,11 +268,34 @@ body:not(.editor_enable) #wrapwrap {
 .adress_box{
 	--gutter: 20px;
 	padding: var(--gutter);
-	border: 1px solid rgba(0,0,0,.1);
 	border-radius: calc(var(--pu-box-radius) * .5);
 	position: relative;
 	font-size: .8em;
 	overflow: hidden;
+	cursor: pointer;
+	height: 100%;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 0 0 1px transparent;
+	&.active{
+		box-shadow: 0 0 0 2px var(--pu-primary);
+	}
+	&.add{
+		box-shadow: 0 0 0 1px transparent;
+		border: 1px dashed rgba(0, 0, 0, 0.15);
+		mark{
+			margin-bottom: 0;
+		}
+		.plus{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 98%;
+			svg{
+				width: 20px;
+				height: 20px;
+				opacity: .2;
+			}
+		}
+	}
 	&-close{
 		position: absolute;
 		right: calc(var(--gutter) * .5);

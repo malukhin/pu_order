@@ -236,11 +236,29 @@ body:not(.editor_enable) #wrapwrap {
 .adress_box {
   --gutter: 20px;
   padding: var(--gutter);
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: calc(var(--pu-box-radius) * .5);
   position: relative;
   font-size: .8em;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px transparent; }
+  .adress_box.active {
+    box-shadow: 0 0 0 2px var(--pu-primary); }
+  .adress_box.add {
+    box-shadow: 0 0 0 1px transparent;
+    border: 1px dashed rgba(0, 0, 0, 0.15); }
+    .adress_box.add mark {
+      margin-bottom: 0; }
+    .adress_box.add .plus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 98%; }
+      .adress_box.add .plus svg {
+        width: 20px;
+        height: 20px;
+        opacity: .2; }
   .adress_box-close {
     position: absolute;
     right: calc(var(--gutter) * .5);
