@@ -225,6 +225,13 @@ body:not(.editor_enable) #wrapwrap {
       opacity: .6;
       margin-top: calc(var(--pu-section-padding) * .25 * -1);
       margin-bottom: calc(var(--pu-section-padding) * .3); }
+.calculator input.error {
+  border-color: #ff3434; }
+.calculator .error-text {
+  font-size: 13px;
+  color: #df2626;
+  position: relative;
+  top: -.2em; }
 
 .adress_box {
   --gutter: 20px;

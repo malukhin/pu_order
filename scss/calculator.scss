@@ -255,6 +255,15 @@ body:not(.editor_enable) #wrapwrap {
 			}
 		}
 	}
+	input.error{
+		border-color: #ff3434;
+	}
+	.error-text{
+		font-size: 13px;
+		color: #df2626;
+		position: relative;
+		top: -.2em;
+	}
 }
 .adress_box{
 	--gutter: 20px;
