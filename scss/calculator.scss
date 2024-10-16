@@ -308,6 +308,18 @@ body:not(.editor_enable) #wrapwrap {
 			width: 12px;
 		}
 	}
+	&-edit{
+		position: absolute;
+		right: calc(var(--gutter) * 1.7);
+		top: calc(var(--gutter) * .4);
+		border: 0;
+		background-color: transparent;
+		border-radius: var(--pu-box-radius);
+		opacity: .3;
+		svg{
+			width: 12px;
+		}
+	}
 	mark{
 		font-weight: bold;
 		margin-bottom: .5em;

@@ -269,6 +269,16 @@ body:not(.editor_enable) #wrapwrap {
     opacity: .3; }
     .adress_box-close svg {
       width: 12px; }
+  .adress_box-edit {
+    position: absolute;
+    right: calc(var(--gutter) * 1.7);
+    top: calc(var(--gutter) * .4);
+    border: 0;
+    background-color: transparent;
+    border-radius: var(--pu-box-radius);
+    opacity: .3; }
+    .adress_box-edit svg {
+      width: 12px; }
   .adress_box mark {
     font-weight: bold;
     margin-bottom: .5em;
