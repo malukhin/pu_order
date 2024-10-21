@@ -291,6 +291,12 @@ body:not(.editor_enable) #wrapwrap {
     margin-bottom: calc(var(--gutter) * .8);
     background: rgba(0, 0, 0, 0.03); }
 
+.mobel_adress_list {
+  --box-gutter: 20px;
+  margin-bottom: calc(var(--box-gutter)* 3.5); }
+  .mobel_adress_list .adress_box.add mark {
+    margin-bottom: calc(var(--gutter)* .8); }
+
 .calculator_tab {
   --gutter: 20px;
   display: flex;
