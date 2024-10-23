@@ -243,6 +243,13 @@ body:not(.editor_enable) #wrapwrap {
   cursor: pointer;
   height: 100%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px transparent; }
+  .adress_box.slim {
+    padding-bottom: 0; }
+    .adress_box.slim mark {
+      margin-bottom: 0; }
+    .adress_box.slim.add {
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .adress_box.active {
     box-shadow: 0 0 0 2px var(--pu-primary); }
   .adress_box.add {

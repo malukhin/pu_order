@@ -275,6 +275,16 @@ body:not(.editor_enable) #wrapwrap {
 	cursor: pointer;
 	height: 100%;
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 0 0 1px transparent;
+	&.slim{
+		padding-bottom: 0;
+		mark{
+			margin-bottom: 0;
+		}
+		&.add{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
 	&.active{
 		box-shadow: 0 0 0 2px var(--pu-primary);
 	}
