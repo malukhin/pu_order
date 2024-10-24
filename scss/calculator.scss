@@ -661,6 +661,7 @@ body:not(.editor_enable) #wrapwrap {
 	svg:not(.close){
 		max-height: calc(var(--box-width) * .37);
 		fill: var(--pu-primary);
+		width: auto;
 	}
 	&-name{
 		margin-top: .4em;
