@@ -519,6 +519,13 @@ body:not(.editor_enable) #wrapwrap {
     .nav-underline .nav-link.active {
       border-color: var(--pu-primary); }
 
+.room-list {
+  --box-width: 160px; }
+  .room-list .input_number {
+    width: var(--box-width);
+    margin-left: var(--box-gutter);
+    margin-bottom: var(--box-gutter); }
+
 .room {
   --box-width: 105px;
   width: var(--box-width);
