@@ -449,9 +449,10 @@ body:not(.editor_enable) #wrapwrap {
   min-height: var(--box-height);
   text-align: center;
   cursor: pointer; }
-  .input_number-icon {
+  .input_number svg {
     max-height: calc(var(--box-height) * .3);
-    fill: var(--pu-primary); }
+    fill: var(--pu-primary);
+    width: auto; }
   .input_number-name {
     margin-top: 5px;
     color: #000;
@@ -551,7 +552,7 @@ body:not(.editor_enable) #wrapwrap {
     overflow-x: auto;
     padding-top: 16px;
     margin-top: -16px; }
-  .room-icon {
+  .room svg:not(.close) {
     max-height: calc(var(--box-width) * .37);
     fill: var(--pu-primary); }
   .room-name {

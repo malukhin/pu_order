@@ -533,9 +533,10 @@ body:not(.editor_enable) #wrapwrap {
 	min-height: var(--box-height);
 	text-align: center;
 	cursor: pointer;
-	&-icon{
+	svg{
 		max-height: calc(var(--box-height) * .3);
 		fill: var(--pu-primary);
+		width: auto;
 	}
 	&-name{
 		margin-top: 5px;
@@ -657,7 +658,7 @@ body:not(.editor_enable) #wrapwrap {
 		padding-top: 16px;
 		margin-top: -16px;
 	}
-	&-icon{
+	svg:not(.close){
 		max-height: calc(var(--box-width) * .37);
 		fill: var(--pu-primary);
 	}
