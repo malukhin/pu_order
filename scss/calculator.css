@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html:not(.iframe_enable),
 body:not(.editor_enable),
 body:not(.editor_enable) #wrapwrap {
@@ -661,7 +662,10 @@ body:not(.editor_enable) #wrapwrap {
     .mobel-catalog-item {
       display: flex;
       align-items: center;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      /* нужно к контенеру добавить класс для анимации добавления */ }
+      .mobel-catalog-item.shine .settings {
+        animation: 1s shine linear; }
     .mobel-catalog-icon {
       width: 40px;
       height: 40px;
@@ -727,7 +731,9 @@ body:not(.editor_enable) #wrapwrap {
           fill: var(--pu-primary); }
       .mobel-catalog-controls.settings {
         justify-content: center;
-        padding-left: 8px; }
+        padding-left: 8px;
+        padding-top: 1px;
+        padding-bottom: 1px; }
         .mobel-catalog-controls.settings .control-btn {
           --icon-size: .9em; }
       .mobel-catalog-controls input::-webkit-outer-spin-button,
@@ -737,6 +743,13 @@ body:not(.editor_enable) #wrapwrap {
       .mobel-catalog-controls input[type=number] {
         -moz-appearance: textfield; }
 
+@keyframes shine {
+  0% {
+    background-color: #fff; }
+  30% {
+    background-color: var(--pu-primary); }
+  100% {
+    background-color: #fff; } }
 /* SS -------------------- */
 /* SM -------------------- */
 @media (min-width: 576px) {

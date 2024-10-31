@@ -794,6 +794,12 @@ body:not(.editor_enable) #wrapwrap {
 			display: flex;
 			align-items: center;
 			margin-bottom: 16px;
+			/* нужно к контенеру добавить класс для анимации добавления */
+			&.shine{
+				 .settings{
+					animation: 1s shine linear;
+				}
+			}
 		}
 		&-icon{
 			width: 40px;
@@ -871,6 +877,8 @@ body:not(.editor_enable) #wrapwrap {
 			&.settings{
 				justify-content: center;
 				padding-left: 8px;
+				padding-top: 1px;
+				padding-bottom: 1px;
 				.control-btn{
 					--icon-size: .9em;
 				}
@@ -886,7 +894,17 @@ body:not(.editor_enable) #wrapwrap {
 		}
 	}
 }
-
+@keyframes shine {
+  0% {
+    background-color: #fff;
+  }
+  30% {
+    background-color: var(--pu-primary);
+  }
+  100% {
+    background-color: #fff;
+  }
+}
 
 
 
