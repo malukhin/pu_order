@@ -667,7 +667,10 @@ body:not(.editor_enable) #wrapwrap {
       height: 40px;
       margin-right: 12px;
       flex: none;
-      fill: rgba(0, 0, 0, 0.75); }
+      fill: #000;
+      opacity: .75;
+      object-fit: contain;
+      object-position: center; }
     .mobel-catalog-title {
       width: 100%; }
       .mobel-catalog-title .title {
