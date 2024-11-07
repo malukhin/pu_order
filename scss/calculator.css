@@ -8,7 +8,7 @@ body:not(.editor_enable) #wrapwrap {
   display: flex; }
 
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center; }
   .btn svg {
     height: 1em;
