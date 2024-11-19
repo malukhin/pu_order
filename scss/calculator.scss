@@ -189,15 +189,19 @@ body:not(.editor_enable) #wrapwrap {
 	}
 	.parking_box{
 		--title-size: 16px;
-		height: 100%;
+		border: 2px solid transparent;
 		border-radius: calc(var(--pu-box-radius) * .75);
 		box-shadow: 0 0 40px var(--pu-box-shadows);
 		padding: var(--pu-box-radius);
 		font-size: var(--title-size);
-		.title{
-			display: flex;
-			align-items: center;
-			font-size: var(--title-size);
+		&:not(:last-child){
+			margin-bottom: var(--gutter-x);
+		}
+		&:has(input:checked){
+			border-color: var(--pu-primary);
+		}
+		&-title{
+			margin-bottom: .7em;
 		}
 		.no-stopping{
 			width: 35px;

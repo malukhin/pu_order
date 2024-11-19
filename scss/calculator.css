@@ -172,15 +172,17 @@ body:not(.editor_enable) #wrapwrap {
     fill: var(--pu-primary); }
 .calculator .parking_box {
   --title-size: 16px;
-  height: 100%;
+  border: 2px solid transparent;
   border-radius: calc(var(--pu-box-radius) * .75);
   box-shadow: 0 0 40px var(--pu-box-shadows);
   padding: var(--pu-box-radius);
   font-size: var(--title-size); }
-  .calculator .parking_box .title {
-    display: flex;
-    align-items: center;
-    font-size: var(--title-size); }
+  .calculator .parking_box:not(:last-child) {
+    margin-bottom: var(--gutter-x); }
+  .calculator .parking_box:has(input:checked) {
+    border-color: var(--pu-primary); }
+  .calculator .parking_box-title {
+    margin-bottom: .7em; }
   .calculator .parking_box .no-stopping {
     width: 35px;
     height: 35px;
